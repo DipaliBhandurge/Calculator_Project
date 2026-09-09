@@ -1,36 +1,48 @@
 #include <stdio.h>
-#include<math.h>
 
 int main()
 {
     double num1, num2;
     char op;
+
     printf("Enter 1st number: ");
-    scanf("%lf", &num1);
+    if (scanf("%lf", &num1) != 1)
+    {
+        printf("Invalid input! Please enter a valid number.\n");
+        return 1;
+    }
 
     printf("Select operator (+, -, *, /): ");
-    scanf(" %c",&op);
+    if (scanf(" %c", &op) != 1)
+    {
+        printf("Invalid input! Please enter a valid operator.\n");
+        return 1;
+    }
 
     printf("Enter 2nd number: ");
-    scanf("%lf", &num2);
+    if (scanf("%lf", &num2) != 1)
+    {
+        printf("Invalid input! Please enter a valid number.\n");
+        return 1;
+    }
 
     switch(op)
     {
         case '+':
-            printf("Result = %.2lf",num1+num2);
+            printf("Result = %.2lf\n", num1+num2);
             break;
 
         case '-':
-            printf("Result = %.2lf",num1-num2);
+            printf("Result = %.2lf\n", num1-num2);
             break;
 
         case '*':
-            printf("Result = %.2lf",num1*num2);
+            printf("Result = %.2lf\n", num1*num2);
             break;
 
         case '/':
             if(num2 != 0)
-                printf("Result = %.2lf",num1/num2);
+                printf("Result = %.2lf\n", num1/num2);
             else
                 printf("Cannot divide by zero!\n");
             break;
