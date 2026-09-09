@@ -1,1 +1,19 @@
-calculator.exe
+.gitignore-
+
+# Build artifacts
+*.exe
+*.out
+*.o
+*.obj
+*.exp
+*.lib
+*.pdb
+*.ilk
+
+# Editor / IDE
+.vscode/
+*.swp
+
+# OS files
+Thumbs.db
+.DS_Store
