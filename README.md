@@ -61,3 +61,13 @@ An extended version of the Simple Calculator that provides a menu-based interfac
 ```bash
 gcc main.c -o main.exe
 ./main.exe
+
+## Calculator flowchart
+```mermaid
+Flowchart TD
+A[start]--> B[Display Menu]
+B--> C[Select Operation]
+C--> D[Enter Number]
+D--> E[Calculate]
+E--> F[Display Result]
+```
