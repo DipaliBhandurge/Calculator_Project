@@ -64,8 +64,8 @@ gcc main.c -o main.exe
 
 ## Calculator flowchart
 ```mermaid
-Flowchart TD
-A[start]--> B[Display Menu]
+flowchart TD
+A[Start]--> B[Display Menu]
 B--> C[Select Operation]
 C--> D[Enter Number]
 D--> E[Calculate]
